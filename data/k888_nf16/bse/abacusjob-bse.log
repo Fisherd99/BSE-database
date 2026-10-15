@@ -1,0 +1,189 @@
+F21_LOGICAL_BINDING rank=6 pid=2070338 logical_cpus=[25, 26, 27, 28, 73, 74, 75, 76] SMT_allowed=true
+F21_LOGICAL_BINDING rank=14 pid=2070346 logical_cpus=[106, 107, 108, 109, 154, 155, 156, 157] SMT_allowed=true
+F21_LOGICAL_BINDING rank=0 pid=2070332 logical_cpus=[1, 2, 3, 4, 48, 49, 50, 51] SMT_allowed=true
+F21_LOGICAL_BINDING rank=9 pid=2070341 logical_cpus=[37, 38, 39, 40, 85, 86, 87, 88] SMT_allowed=true
+F21_LOGICAL_BINDING rank=15 pid=2070347 logical_cpus=[110, 111, 112, 113, 158, 159, 160, 161] SMT_allowed=true
+F21_LOGICAL_BINDING rank=7 pid=2070339 logical_cpus=[29, 30, 31, 32, 77, 78, 79, 80] SMT_allowed=true
+F21_LOGICAL_BINDING rank=8 pid=2070340 logical_cpus=[33, 34, 35, 36, 81, 82, 83, 84] SMT_allowed=true
+F21_LOGICAL_BINDING rank=11 pid=2070343 logical_cpus=[45, 46, 47, 93, 94, 97, 144, 145] SMT_allowed=true
+F21_LOGICAL_BINDING rank=13 pid=2070345 logical_cpus=[102, 103, 104, 105, 150, 151, 152, 153] SMT_allowed=true
+F21_LOGICAL_BINDING rank=4 pid=2070336 logical_cpus=[17, 18, 19, 20, 64, 65, 66, 67] SMT_allowed=true
+F21_LOGICAL_BINDING rank=12 pid=2070344 logical_cpus=[98, 99, 100, 101, 146, 147, 148, 149] SMT_allowed=true
+F21_LOGICAL_BINDING rank=3 pid=2070335 logical_cpus=[13, 14, 15, 16, 60, 61, 62, 63] SMT_allowed=true
+F21_LOGICAL_BINDING rank=2 pid=2070334 logical_cpus=[9, 10, 11, 12, 56, 57, 58, 59] SMT_allowed=true
+F21_LOGICAL_BINDING rank=10 pid=2070342 logical_cpus=[41, 42, 43, 44, 89, 90, 91, 92] SMT_allowed=true
+F21_LOGICAL_BINDING rank=1 pid=2070333 logical_cpus=[5, 6, 7, 8, 52, 53, 54, 55] SMT_allowed=true
+F21_LOGICAL_BINDING rank=5 pid=2070337 logical_cpus=[21, 22, 23, 68, 69, 70, 71, 72] SMT_allowed=true
+Info: Local MPI proc number: 16,OpenMP thread number: 8,Total thread number: 128,Local thread limit: 192
+
+                     ▄████▄ █████▄ ▄████▄ ▄█████ ██  ██ ▄█████ 
+                     ██▄▄██ ██▄▄██ ██▄▄██ ██     ██  ██ ▀▀▀▄▄▄ 
+                     ██  ██ ██▄▄█▀ ██  ██ ▀█████ ▀████▀ █████▀ 
+
+                                                                                     
+                                v3.11.0-beta10
+
+               Atomic-orbital Based Ab-initio Computation at UStc                    
+
+                     Website: http://abacus.ustc.edu.cn/                             
+               Documentation: https://abacus.deepmodeling.com/                       
+                  Repository: https://github.com/abacusmodeling/abacus-develop       
+                              https://github.com/deepmodeling/abacus-develop         
+                      Commit: 54febc567 (Sun Sep 27 04:40:04 2026 +0800)
+
+ Fri Oct  9 16:15:06 2026
+ MAKE THE DIR         : OUT.bse/
+ RUNNING WITH DEVICE  : CPU / Intel(R) Xeon(R) 6743P-C (x2)
+ WARNING: some of potential function is set to zero cause of less than 1e-30.
+ UNIFORM GRID DIM     : 48 * 48 * 48
+ UNIFORM GRID DIM(BIG): 16 * 16 * 16
+ DONE(0.0775836  SEC) : SETUP UNITCELL
+ DONE(0.0874381  SEC) : INIT K-POINTS
+ ----------------------------------------------------------------
+ ----------------------------------------------------------------
+ SPIN    KPOINTS         PROCESSES   THREADS/PROC  THREADS/TOTAL 
+ 1       512             16          8             128           
+ ----------------------------------------------------------------
+ Use Systematically Improvable Atomic bases
+ ----------------------------------------------------------------
+ TOTAL NBASE 44
+ ELEMENT ORBITALS        NBASE       NATOM       
+ Si      3s3p2d-8au      22          2           
+ ----------------------------------------------------------------
+ Initial plane wave basis and FFT box
+ ----------------------------------------------------------------
+Read 2744 k-points and weights from OUT.librpa/band_kpath_info
+ DONE(0.142755   SEC) : Set K-POINTS and R-list for RI
+ ----------------------------------------------------------------
+ ----------------------------------------------------------------
+ SPIN    KPOINTS         PROCESSES   THREADS/PROC  THREADS/TOTAL 
+ 1       2744            16          8             128           
+ ----------------------------------------------------------------
+ Use Systematically Improvable Atomic bases
+ ----------------------------------------------------------------
+ TOTAL NBASE 44
+ ELEMENT ORBITALS        NBASE       NATOM       
+ Si      3s3p2d-8au      22          2           
+ ----------------------------------------------------------------
+ Initial plane wave basis and FFT box
+ ----------------------------------------------------------------
+band_out: nk = 512
+band_out: nspin = 1
+band_out: nbands = 44
+nocc in band_out: 4
+band_kpath_info: nk = 2744
+band_kpath_info: nspin = 1
+band_kpath_info: nbands = 44
+BSE will use fine kgrid.
+in read_energy_qp_from_band_files, nbands(nocc+nvir): 8
+Finish read gw, ncore=0
+Do phase correction
+ DONE(13.282     SEC) : read librpa eigenvectors.
+VBM energy (eV): 5.96232 at k 0
+CBM energy (eV): 7.07379 at k 90
+Indirect gap (eV): 1.11147
+Direct gap (eV): 3.24758 at k 0
+| Deferred TDA X elements per rank: 120472576
+Calculating Casida/BSE matrix directly.
+ DONE(13.431     SEC) : found Cs file: Cs_data_1.txt, start reading...
+ DONE(16.5817    SEC) : found Cs file: Cs_data_10.txt, start reading...
+ DONE(18.6364    SEC) : found Cs file: Cs_data_11.txt, start reading...
+ DONE(19.744     SEC) : found Cs file: Cs_data_12.txt, start reading...
+ DONE(19.7457    SEC) : found Cs file: Cs_data_13.txt, start reading...
+ DONE(19.7472    SEC) : found Cs file: Cs_data_14.txt, start reading...
+ DONE(19.7494    SEC) : found Cs file: Cs_data_15.txt, start reading...
+ DONE(21.3087    SEC) : found Cs file: Cs_data_16.txt, start reading...
+ DONE(23.993     SEC) : found Cs file: Cs_data_2.txt, start reading...
+ DONE(26.6784    SEC) : found Cs file: Cs_data_3.txt, start reading...
+ DONE(28.2406    SEC) : found Cs file: Cs_data_4.txt, start reading...
+ DONE(28.2443    SEC) : found Cs file: Cs_data_5.txt, start reading...
+ DONE(28.2463    SEC) : found Cs file: Cs_data_6.txt, start reading...
+ DONE(28.249     SEC) : found Cs file: Cs_data_7.txt, start reading...
+ DONE(29.3682    SEC) : found Cs file: Cs_data_8.txt, start reading...
+ DONE(31.4363    SEC) : found Cs file: Cs_data_9.txt, start reading...
+read_coulomb_mat_k: using prefix "coulomb_unshrinked_cut_" in directory "OUT.librpa/"
+ DONE(34.5851    SEC) : found Coulomb file: coulomb_unshrinked_cut_1.txt, start reading...
+ DONE(95.1442    SEC) : found Coulomb file: coulomb_unshrinked_cut_10.txt, start reading...
+ DONE(95.1481    SEC) : found Coulomb file: coulomb_unshrinked_cut_11.txt, start reading...
+ DONE(95.1505    SEC) : found Coulomb file: coulomb_unshrinked_cut_12.txt, start reading...
+ DONE(95.1524    SEC) : found Coulomb file: coulomb_unshrinked_cut_13.txt, start reading...
+ DONE(155.663    SEC) : found Coulomb file: coulomb_unshrinked_cut_14.txt, start reading...
+ DONE(155.665    SEC) : found Coulomb file: coulomb_unshrinked_cut_15.txt, start reading...
+ DONE(155.667    SEC) : found Coulomb file: coulomb_unshrinked_cut_16.txt, start reading...
+ DONE(155.67     SEC) : found Coulomb file: coulomb_unshrinked_cut_2.txt, start reading...
+ DONE(155.672    SEC) : found Coulomb file: coulomb_unshrinked_cut_3.txt, start reading...
+ DONE(155.674    SEC) : found Coulomb file: coulomb_unshrinked_cut_4.txt, start reading...
+ DONE(155.676    SEC) : found Coulomb file: coulomb_unshrinked_cut_5.txt, start reading...
+ DONE(226.779    SEC) : found Coulomb file: coulomb_unshrinked_cut_6.txt, start reading...
+ DONE(226.789    SEC) : found Coulomb file: coulomb_unshrinked_cut_7.txt, start reading...
+ DONE(226.791    SEC) : found Coulomb file: coulomb_unshrinked_cut_8.txt, start reading...
+ DONE(226.795    SEC) : found Coulomb file: coulomb_unshrinked_cut_9.txt, start reading...
+ DONE(226.798    SEC) : read Vq files. Now convert Vq to VR.
+ DONE(229.39     SEC) : VR keys has been prepared.
+ DONE(1581.4     SEC) : convert Vq to VR.
+ DONE(1914.83    SEC) : read WR files.
+Total Molecular LRI tasks: 30118144, number of MPI processes: 16
+ DONE(1914.9     SEC) : distribute_atom_and_k
+ DONE(1915.39    SEC) : set_Cs
+ DONE(1921.23    SEC) : set_Vs
+ DONE(1928.89    SEC) : set_Ws
+ DONE(1982.71    SEC) : MolecularLRI_init
+ DONE(1982.85    SEC) : HamiltBSE is ready to calculate
+| init TDA BSE for type: singlet
+| A(ai,bj) = (Ea-Ei) δ_ij δ_ab + α (ai|V|jb)  +  β (ji|W|ab)
+|   term coefficient: (Exchange) α: 2 , (Direct) β: -1
+| bse_mem_save is true, V and W matrix will be added to BSE matrix directly.
+ DONE(2394.99    SEC) : transform_k_2dlocal
+ DONE(3840.63    SEC) : transform_k_2dlocal
+| V and W matrix has been added.
+| TDA uses symmetric k-weight representation; amplitudes U satisfy U^dagger U = I.
+| CHECK hermiticity/symmetry
+ DONE(3848.59    SEC) : is_hermitian: tranc
+ DONE(3853.61    SEC) : Frobenius norm
+|  Hermitian check: ||A - A^H||_F = 4.34894e-07, ||A + A^H||_F = 336.304
+|   ||A - A^H||_F / ||A + A^H||_F = 1.29316e-09
+|  CHECK PASS: Matrix A is hermitian under threshold 1e-06
+ DONE(3853.61    SEC) : init_bse_matrix
+ DONE(4857.25    SEC) : elpa_solve_tda
+| Releasing solved A capacity bytes per rank: 1938817024
+ DONE(4865.3     SEC) : pA2pX
+ DONE(4865.3     SEC) : BSE low-memory TDA solver
+eigenvalues: (Ry)
+0.237021 0.237199 0.237637 0.237809 0.238069 0.238113 0.238137 0.238301 0.238623 0.240897 0.241092 0.241232 0.241423 0.241659 0.241793 0.242138 0.242301 0.242823 0.242879 0.2429 
+eigenvalues: (eV)
+3.22484 3.22726 3.23322 3.23555 3.23909 3.2397 3.24002 3.24225 3.24664 3.27758 3.28022 3.28213 3.28473 3.28794 3.28976 3.29446 3.29668 3.30377 3.30454 3.30483 
+Excition binding energies (eV):0.0227404
+Calculating BSE optical absorption spectrum.
+Calculating velocity matrix in KS presentation...
+ DONE(4867.78    SEC) : Finish velocity matrix in KS presentation.
+Calculating transition dipole moments in velocity gauge.
+ DONE(4869       SEC) : LR::LR_Spectrum::cal_transition_dipoles_velocity
+Total oscillator strength = 0.915046
+The sum rule is not well satisfied, try more nvirt and nstates if needed.
+ DONE(4885.63    SEC) : LR::LR_Spectrum::transition_analysis
+ DONE(4886.45    SEC) : LR::LR_Spectrum::write_transition_dipole OUT.bse/trans_dipole_singlet_tda.dat
+ DONE(4886.45    SEC) : ESolver_BSE::after_all_runners
+
+ TIME STATISTICS
+--------------------------------------------------------------------
+  CLASS_NAME          NAME          TIME/s   CALLS    AVG/s  PER/%  
+--------------------------------------------------------------------
+              total                 4886.45 225      21.72   100.00 
+ Driver       atomic_world          4886.45 1        4886.45 100.00 
+ Relax_Driver relax_driver          4852.42 1        4852.42 99.30  
+ ESolver_BSE  runner                4852.42 1        4852.42 99.30  
+ MolecularLRI init                  67.88   1        67.88   1.39   
+ MolecularLRI cal_Csk_ao_mo         53.81   1        53.81   1.10   
+ HamiltBSE    tda_solver_low_memory 2882.45 1        2882.45 58.99  
+ HamiltBSE    init_bse_matrix       1870.76 1        1870.76 38.28  
+ MolecularLRI cal_hartree_for_A     398.20  1        398.20  8.15   
+ MolecularLRI cal_W_for_A           1429.92 1        1429.92 29.26  
+ HamiltBSE    elpa_solve_tda        1003.32 1        1003.32 20.53  
+--------------------------------------------------------------------
+
+
+ START  Time  : Fri Oct  9 16:15:06 2026
+ FINISH Time  : Fri Oct  9 17:36:33 2026
+ TOTAL  Time  : 4887
+ SEE INFORMATION IN : OUT.bse/
+2026-10-09T17:36:33+0800 stage=abacusjob-bse command=0 expect=0
